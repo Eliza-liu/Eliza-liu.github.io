@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h2>Here is a cute cat </h2>
+
+<ul>
+  <li>Fox tabby cat</li>
+<img src="https://s.yimg.com/ny/api/res/1.2/5DElAHDcugk9ORi7eP3HXw--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/http://media.zenfs.com/en/homerun/feed_manager_auto_publish_494/673b6157da9b18352e1d0645e7ec3812"> 
+<h3>
+So cute!</h3>
+<h3>
+Here is an article about this cat: <a href="https://finance.yahoo.com/news/alarming-number-vegans-feeding-carnivorous-pets-plant-based-diet-115848266.html">Number of vegans are feeding carnivorous pets a plant-based diet</a> </h3>
+
+</ul>  
+
+<h2>
+<h3>I change my mind, I want to see stupid cat! If so, please click:<a href = "file:///Users/xiaozhen/Desktop/art74html/stupid%20cat.htm"> GO TO SEE STUPID CAT</a>
+
+</body>
+</html>
+
