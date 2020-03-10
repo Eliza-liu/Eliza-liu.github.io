@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
-This is Xiaozhen
-You can use the [editor on GitHub](https://github.com/Eliza-liu/Eliza-liu.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<h1>
+This is a HEADING of CAT !</h1>
+</body> 
+Good afternoon.</body>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+<p> 
+HELLO, go to see the cat!</p>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+<h1>
+What kind of cat do you like?</h1>
 
-# Header 1
-## Header 2
-### Header 3
+<h2> A: I like CUTE CAT!</h2>
+<h3><a href = "file:///Users/xiaozhen/Desktop/art74html/cute%20cat.htm"> GO TO SEE CUTE CAT</a> </h3>
 
-- Bulleted
-- List
+<h2> B: I like STUPID CAT!! </h2>
 
-1. Numbered
-2. List
+<h3><a href = "file:///Users/xiaozhen/Desktop/art74html/stupid%20cat.htm"> GO TO SEE STUPID CAT</a> </h3>
 
-**Bold** and _Italic_ and `Code` text
+ </body>
+</html>
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Eliza-liu/Eliza-liu.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
