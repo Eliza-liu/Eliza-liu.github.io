@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
 <title>Page Title</title>
@@ -7,7 +7,7 @@
 <h1>
 This is a HEADING of CAT !</h1>
 </body> 
-Good afternoon.</body>
+Good afternoon.
 
 
 <p> 
