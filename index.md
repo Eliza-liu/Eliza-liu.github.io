@@ -24,6 +24,6 @@ What kind of cat do you like?</h1>
 
 <h3><a href = "file:///Users/xiaozhen/Desktop/art74html/stupid%20cat.htm"> GO TO SEE STUPID CAT</a> </h3>
 
- </body>
+
 </html>
 
