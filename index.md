@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
 <title>Page Title</title>
@@ -7,7 +7,7 @@
 <h1>
 This is a HEADING of CAT !</h1>
 </body> 
-Good afternoon.</body>
+Good afternoon.
 
 
 <p> 
@@ -24,6 +24,6 @@ What kind of cat do you like?</h1>
 
 <h3><a href = "file:///Users/xiaozhen/Desktop/art74html/stupid%20cat.htm"> GO TO SEE STUPID CAT</a> </h3>
 
- </body>
+
 </html>
 
