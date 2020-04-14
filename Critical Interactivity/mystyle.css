@@ -1,0 +1,44 @@
+body {
+	background-color: black;
+  }
+  .effectside{
+background-color:#FFFFFF ;
+background-image:
+linear-gradient(
+	45deg,
+	transparent 45%,
+	hsla(48,20%,90%,1) 45%,
+	hsla(48,20%,90%,1) 60%,
+	transparent 0
+) ;
+background-size: .05em .05em;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transprent;
+-webkit-text-stroke: 2px #C8CACA;
+  }
+
+
+.effect08{
+	color:#E2E2DF;
+	transform-origin:center bottom;
+	transform-style: preserve-3d;
+	transition:all 1s;
+	cursor:pointer;  
+}
+.effect08:hover{
+transform:rotate3d(1,0,0,40deg);
+}
+.effect08 h1{
+position: absolute;
+left:0;
+right:0;
+margin:auto;
+text-shadow: 0 0 10px rgba(167, 219, 233, .5);
+}
+/* loop for every h1
+*/
+@for $n from 1 to 8{
+	.effect08 h1:nth-child(#{$n}){
+		transform: translateZ(4px*$n);
+	}
+}
