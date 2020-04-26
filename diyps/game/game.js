@@ -1,9 +1,9 @@
 var score =0;
 var gameState= "L1";
 var img;
-var imgSize = 90;
-var imgX = 50;
-var imgY = 50;
+var imgSize = 30;
+var imgX = 20;
+var imgY = 20;
 function preload(){
   img = loadImage('https://eliza-liu.github.io/diyps/game/head.png');
   img1 = loadImage('https://eliza-liu.github.io/diyps/game/mouse.png');
