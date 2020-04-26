@@ -4,9 +4,10 @@ var ballSize = 40;
 var score =0;
 var img;
 function preload(){
-  img = loadImage('https://eliza-liu.github.io/diyps/s.png');
-   img6 = loadImage('https://eliza-liu.github.io/diyps/ban.png');
-  img7 = loadImage('https://eliza-liu.github.io/diyps/star.png');
+  img = loadImage('https://eliza-liu.github.io/diyps/game/head.png');
+  img1 = loadImage('https://eliza-liu.github.io/diyps/game/mouse.png');
+  img2 = loadImage('https://eliza-liu.github.io/diyps/ban.png');
+  img3 = loadImage('https://eliza-liu.github.io/diyps/star.png');
 }
 
 function setup() {
@@ -26,7 +27,9 @@ function draw() {
 
 } // end draw
 
-
+function sight(){
+ image(img, mouseX-10, mouseY-10);
+}
 function levelOne(){
   text("Level 1", width/2, height-20);
   var distToBall= dist(ballx, bally, mouseX, mouseY);
