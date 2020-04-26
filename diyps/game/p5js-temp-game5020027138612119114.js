@@ -89,8 +89,7 @@ function levelThree(){
   if(score>30){
     //l4
  gameState = "L4";
-  }
-  
+  } 
 //  line(ballx, bally, mouseX, mouseY);
   ellipse(ballx, bally, ballSize, ballSize);
 } // end level three
