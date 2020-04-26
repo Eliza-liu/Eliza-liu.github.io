@@ -2,7 +2,9 @@ var ballx = 300;
 var bally = 300;
 var ballSize = 40;
 var score =0;
+var gameState= "L1";
 var img;
+ var imgSize = 170;
 function preload(){
   img = loadImage('https://eliza-liu.github.io/diyps/game/head.png');
   img1 = loadImage('https://eliza-liu.github.io/diyps/game/mouse.png');
@@ -28,6 +30,7 @@ function draw() {
 } // end draw
 
 function sight(){
+  //mouse image in snake head
  image(img, mouseX-10, mouseY-10);
 }
 function levelOne(){
