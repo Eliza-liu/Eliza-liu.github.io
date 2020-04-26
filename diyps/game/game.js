@@ -19,7 +19,7 @@ function setup() {
 
 
 function draw() {
-  background(217, 227, 233);
+  background(238, 249, 247);
   if (gameState=="L1"){
   levelOne();
   } 
@@ -37,6 +37,7 @@ function draw() {
 
 
 function levelOne(){
+  stroke(2);
   text("Level 1", width/2, height-20);
   sight();
   var distToBall= dist(ballx, bally, mouseX, mouseY);
@@ -46,17 +47,18 @@ function levelOne(){
     score= score +1;
   }
   if(score>10){
-// call level 2
- // fill(random(255));
+
  gameState= "L2";
   }
   ellipse(ballx, bally, ballSize, ballSize2);
+  fill(194, 213, 179);
   line(ballx, bally, mouseX, mouseY);
   
 } // end level one
 
 function levelTwo(){
-    background(217, 233, 225);
+   stroke(2);
+    background(255, 251, 235  );
   text("Level 2", width/2, height-20);
   sight1();
   var distToBall= dist(ballx, bally, mouseX, mouseY);
@@ -73,7 +75,9 @@ function levelTwo(){
   
 //  line(ballx, bally, mouseX, mouseY);
   ellipse(ballx, bally, ballSize, ballSize);
-} // end level two
+  fill(221, 203, 176);
+} 
+// end level two
 
 function levelThree(){
      background(231, 233, 217);
@@ -92,23 +96,30 @@ function levelThree(){
   } 
 //  line(ballx, bally, mouseX, mouseY);
   ellipse(ballx, bally, ballSize, ballSize);
-} // end level three
+  fill(255, 221, 93);
+} 
+// end level three
+
 
 function levelFour(){
-     background(249, 240, 226  );
-  text("Level 4 ", width/2, height-20);
+  text("Level 4", width/2, height-20);
   sight3();
   var distToBall= dist(ballx, bally, mouseX, mouseY);
   if (distToBall <ballSize/2){
     ballx = random(width);
     bally= random(height);
-    ballSize=ballSize -1;
     score= score +1;
   }
+  if(score>40){
+// call level 5
+ // fill(random(255));
+ gameState= "L5";
+  }
+  ellipse(ballx, bally, ballSize, ballSize2);
+  fill(194, 213, 179);
   line(ballx, bally, mouseX, mouseY);
-  ellipse(ballx, bally, ballSize, ballSize);
+  
 } // end level four
-
 
 function sight(){
  image(img, mouseX-10, mouseY-10);
