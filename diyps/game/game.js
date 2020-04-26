@@ -1,10 +1,9 @@
-var ballx = 300;
-var bally = 300;
-var ballSize = 40;
 var score =0;
 var gameState= "L1";
 var img;
- var imgSize = 170;
+var imgSize = 90;
+var imgX = 50;
+var imgY = 50;
 function preload(){
   img = loadImage('https://eliza-liu.github.io/diyps/game/head.png');
   img1 = loadImage('https://eliza-liu.github.io/diyps/game/mouse.png');
@@ -20,32 +19,74 @@ function setup() {
 
 
 function draw() {
-  background(220);
-  
-  levelOne();
-  
+  background(217, 227, 233);
+   if (gameState=="L1"){
+      levelOne();
+  } 
+  if (gameState=="L2"){
+       levelTwo(); 
+  }
+  if (gameState=="L3"){
+       levelThree(); 
+  }
   text(("Score: " + score), width/2, 40);
-  
 
 } // end draw
 
+function levelOne(){
+  background(217, 233, 225);
+  text("Level 1", width/2, height-20);
+  sight();
+ var distToimg= dist(imgX, imgY, mouseX, mouseY);
+  if (distToimg <imgSize/2){
+    
+    score= score +1;}
+    if (score >5 ){    
+//go to level 2
+ gameState = "L2";
+  } 
+image(imh1,imgX,imgY, mouseX, mouseY);
+}
+//end level 1
+
+
+
+
+function levelTwo(){
+  background(231, 233, 217);
+  text("Level 2", width/2, height-20);
+    sight();
+ var distToimg= dist(imgX, imgY, mouseX, mouseY);
+  if (distToimg <imgSize/2){
+    
+    score= score +1;}
+    if (score >10 ){    
+//go to level 2
+ gameState = "L2";
+  } 
+image(imh2,imgX,imgY, mouseX, mouseY);
+}
+//end level 2
+
+
+function levelTwo(){
+  background(231, 233, 217);
+  text("Level 2", width/2, height-20);
+    sight();
+ var distToimg= dist(imgX, imgY, mouseX, mouseY);
+  if (distToimg <imgSize/2){
+    
+    score= score +1;}
+    if (score >15 ){    
+//go to level 2
+ gameState = "L3";
+  } 
+image(img3,imgX,imgY, mouseX, mouseY);
+}
+//end level 3
+
+
+
 function sight(){
-  //mouse image in snake head
  image(img, mouseX-10, mouseY-10);
 }
-function levelOne(){
-  text("Level 1", width/2, height-20);
-  var distToBall= dist(ballx, bally, mouseX, mouseY);
-  if (distToBall <ballSize/2){
-    ballx = random(width);
-    bally= random(height);
-    score= score +1;
-  }
-  if(score>5){
-// level 2
-  fill(random(255));
-  }
-  
-  line(ballx, bally, mouseX, mouseY);
-  ellipse(ballx, bally, ballSize, ballSize);
-} // end level one
