@@ -172,12 +172,133 @@
 	<br>
 	<br>
 	<br>
+	<h3><center><font face="Bradley Hand" color="cornflowerblue">Interactive / Game</h3></center>
 	<br>
+	<center> <img src = "L1.png" height="300">
+		<img src = "L2.png" height="300">
+		<img src = "L3.png" height="300">
+		</center>
+
+		<br>
+		<br>
+		<br>
+		<h4><center><font face="Bradley Hand" color="cornflowerblue"> Here are the code:
+			</font></center></h4>
+		
+				
+<h5>
+	<center><font face="Bradley Hand" color="cornflowerblue"> var imgX = 40;
+		<br>var imgY = 40;
+		<br>var imgSize = 140;
+		<br>var score = 0;
+		<br>var gameState = "L1";
+		
+		<br>function preload(){
+			<br>  img = loadImage('https://eliza-liu.github.io/diyps/game/head.png');
+			<br> img1 = loadImage('https://eliza-liu.github.io/diyps/game/mouse.png');
+			<br>  img2 = loadImage('https://eliza-liu.github.io/diyps/game/ba.png');
+			<br>  img3 = loadImage('https://eliza-liu.github.io/diyps/game/tu.png');
+		}
+		<br>function setup() {
+			<br>  createCanvas(600, 600);
+			<br>  textAlign(CENTER);
+			<br>  textSize(20);
+		} // end setup
+		<br>
+		<br>
+		<br>function draw() {
+			<br>  background(238, 249, 247);
+			<br>  if (gameState=="L1"){
+				<br>  levelOne();
+		  } 
+		  <br>  if (gameState=="L2"){
+		   levelTwo(); 
+		  }
+		  <br>  if (gameState=="L3"){
+			<br>   levelThree(); 
+		  }
+		  <br>  if (gameState=="L4"){
+			<br> levelFour(); 
+		  }
+		  <br> 
+		  <br>  text(("Score: " + score), width/2, 40);
+		  
+		
+		} // end draw
+		
+		
+		<br>function levelOne(){
+			<br>  stroke(2);
+			<br>  text("Level 1 ", width/2, height-20);
+			<br>  sight();
+			<br> var distToImg = dist(imgX, imgY, mouseX, mouseY);
+			<br>	if (distToImg < imgSize / 2) {
+				<br>		imgX = random(width);
+				<br>		imgY = random(height);
+				<br>		score = score + 1;
+				<br>	}
+				<br>	if (score > 12) {
+					<br>		gameState = "L2";
+					<br>	}
+					<br>fill(160, 198, 214 );
+		
+					<br>	image(img1, imgX, imgY, 50, 50);
+					<br>	} // end level one
+		
+					<br>	function levelTwo(){
+						<br>	   stroke(2);
+						<br>	background(255, 251, 235  );
+			<br>	  text("Level 2", width/2, height-20);
+			<br>  sight1();
+			<br> var distToImg2 = dist(imgX, imgY, mouseX, mouseY);
+			<br>	if (distToImg2 < imgSize / 2) {
+				<br>		imgX = random(width);
+				<br>		imgY = random(height);
+				<br>		score = score + 1;
+				<br>	}
+				<br>	if (score > 24) {
+					<br>		gameState = "L3";
+					<br>		}
+		
+		
+					<br>			image(img2, imgX, imgY, 100, 100);
+			<br>		} 
+		// end level two
+		<br>		
+		<br>		
+		<br>		function levelThree(){
+			<br>		  stroke(2);
+			<br>		  text("Level 3 ", width/2, height-20);
+			<br>		  sight2();
+			<br>		  var distToImg3 = dist(imgX, imgY, mouseX, mouseY);
+			<br>			if (distToImg3 < imgSize / 2) {
+				<br>				imgX = random(width);
+				<br>				imgY = random(height);
+				<br>				score = score + 1;
+		 
+				<br>		}
+		
+				<br>		
+				<br>			image(img3, imgX, imgY, 50, 50);
+			<br>		} // end level one
+		
+			<br>		function sight(){
+				<br>		 image(img, mouseX-10, mouseY-10);
+				<br>	}
+		<br>		function sight1(){
+			<br>	 image(img1, mouseX-10, mouseY-10);
+			<br>		}
+			<br>		function sight2(){
+				<br>	 image(img2, mouseX-10, mouseY-10);
+				<br>	}
+
+	</font></center></h5>
+
 
 
     <!-- footer -->
     <footer>
-		<font face="Bradley Hand" color="cornflowerblue">   copyright © 2020  </font>
+		<font face="Bradley Hand" color="cornflowerblue">   copyright @ 2020  </font>
     </footer>
 
 	<font face="Bradley Hand" color="cornflowerblue">

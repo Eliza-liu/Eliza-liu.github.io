@@ -8,7 +8,7 @@ function preload(){
   img = loadImage('https://eliza-liu.github.io/diyps/game/head.png');
   img1 = loadImage('https://eliza-liu.github.io/diyps/game/mouse.png');
   img2 = loadImage('https://eliza-liu.github.io/diyps/game/ba.png');
-  img3 = loadImage('https://eliza-liu.github.io/diyps/game/sta.png');
+  img3 = loadImage('https://eliza-liu.github.io/diyps/game/tu.png');
 }
 function setup() {
   createCanvas(600, 600);
@@ -48,10 +48,10 @@ function levelOne(){
         imgY = random(height);
         score = score + 1;
     }
-    if (score > 10) {
+    if (score > 12) {
         gameState = "L2";
     }
-fill(160, 198, 214  );
+fill(160, 198, 214 );
 
     image(img1, imgX, imgY, 50, 50);
 } // end level one
@@ -67,9 +67,9 @@ function levelTwo(){
         imgY = random(height);
         score = score + 1;
     }
-    if (score > 20) {
+    if (score > 24) {
 
-        fill(random(255));
+        gameState = "L3";
     }
 
 
@@ -77,6 +77,22 @@ function levelTwo(){
 } 
 // end level two
 
+
+function levelThree(){
+  stroke(2);
+  text("Level 3 ", width/2, height-20);
+  sight2();
+  var distToImg3 = dist(imgX, imgY, mouseX, mouseY);
+    if (distToImg3 < imgSize / 2) {
+        imgX = random(width);
+        imgY = random(height);
+        score = score + 1;
+ 
+    }
+
+
+    image(img3, imgX, imgY, 50, 50);
+} // end level one
 
 function sight(){
  image(img, mouseX-10, mouseY-10);
@@ -86,7 +102,4 @@ function sight1(){
 }
 function sight2(){
  image(img2, mouseX-10, mouseY-10);
-}
-function sight3(){
- image(img3, mouseX-10, mouseY-10);
 }
