@@ -80,6 +80,7 @@ function levelTwo(){
 
 function levelThree(){
   stroke(2);
+  background(225, 241, 219  );
   text("Level 3 ", width/2, height-20);
   sight2();
   var distToImg3 = dist(imgX, imgY, mouseX, mouseY);
