@@ -34,8 +34,11 @@ p{
 nav a {
   padding: 0px 8px;
   text-decoration: none;
-  color: black;
+  color: midnightblue;
+  
 }
+
+
 nav a:hover {
   opacity: 0.5;
 }
@@ -88,12 +91,12 @@ footer {
   color: #4479B3ff;
   float: right;
   /* margin-top: 225px; */
-  padding-top: 30px;
-  padding-right: 30px;
-  padding-left:30px;
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-left:40px;
   padding-bottom:30px;
-  border: 3px solid rgb(114, 171, 232);
-  margin-top: 150px;
+  border: 5px solid rgb(164, 213, 241);
+  margin-top: 50px;
   margin-left: 100px;
   margin-right: 400px;
 
