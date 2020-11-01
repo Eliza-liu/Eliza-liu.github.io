@@ -116,13 +116,14 @@ footer {
 
 }
 #bio2 {
-  width: 45%;
+  width: 46%;
   color: #4479B3ff;
   float: right;
+  line-height: 2 ;
   /* margin-top: 225px; */
   padding-top: 40px;
-  padding-right: 40px;
-  padding-left:40px;
+  padding-right: 30px;
+  padding-left:30px;
   padding-bottom:30px;
   border: 5px solid rgb(164, 213, 241);
   margin-top: 50px;
